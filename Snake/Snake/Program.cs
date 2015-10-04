@@ -19,11 +19,11 @@ namespace Snake
 
             //Draw(x1, y1, sym1);
 
-            Point p1 = new Point();
-            p1.x = 1;
-            p1.y = 3;
-            p1.sym = '*';
-            //Draw(p1.x, p1.y, p1.sym);
+            Point p1 = new Point(1, 3, '*');
+            //p1.x = 1;
+            //p1.y = 3;
+            //p1.sym = '*';
+            ////Draw(p1.x, p1.y, p1.sym);
             p1.Draw();
 
             //int x2 = 4;
@@ -35,11 +35,11 @@ namespace Snake
 
             //Draw(x2, y2, sym2);
 
-            Point p2 = new Point();
-            p2.x = 4;
-            p2.y = 5;
-            p2.sym = '#';
-            //Draw(p2.x, p2.y, p2.sym);
+            Point p2 = new Point(4, 5, '#');
+            //p2.x = 4;
+            //p2.y = 5;
+            //p2.sym = '#';
+            ////Draw(p2.x, p2.y, p2.sym);
             p2.Draw();
 
             Console.ReadKey();
