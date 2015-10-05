@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 namespace Snake
 {
     //draw horizontal line
-    class HorizontalLine
+    //inheritance class Figure
+    class HorizontalLine : Figure
     {
-        //create List
-        List<Point> pList;
-
         //constructor
         //takes data for left and right and osZ and symbol
         public HorizontalLine(int xLeft, int xRight, int y, char sym)
@@ -28,14 +26,6 @@ namespace Snake
 
         }
 
-        //drawing method
-        public void Draw()
-        {
-            foreach (Point p in pList)
-            {
-                //calling Point object's function
-                p.Draw();
-            }
-        }
+        
     }
 }
