@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
+    //crea and draw a symbol
     class Point
     {
+        //create coordinates
         public int x;
         public int y;
+        //create symbol
         public char sym;
 
         
         public Point()
         {
-            //Console.WriteLine("Elo MON!");
         }
 
-        //constructor
+        //constructor takes data from the object
         public Point(int _x, int _y, char _sym)
         {
             x = _x;
@@ -26,7 +28,7 @@ namespace Snake
             sym = _sym;
         } 
 
-
+        //function draws the symbol
         public void Draw()
         {
             Console.SetCursorPosition(x, y);
