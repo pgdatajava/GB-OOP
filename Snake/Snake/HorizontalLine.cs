@@ -13,17 +13,18 @@ namespace Snake
         List<Point> pList;
 
         //constructor
-        public HorizontalLine()
+        //takes data for left and right and osZ and symbol
+        public HorizontalLine(int xLeft, int xRight, int y, char sym)
         {
             pList = new List<Point>();
-            //create emty List
-            Point p1 = new Point(4, 4, '*');
-            Point p2 = new Point(5, 4, '*');
-            Point p3 = new Point(6, 4, '*');
-            //add Point objects into the List
-            pList.Add(p1);
-            pList.Add(p2);
-            pList.Add(p3);
+            //cycke
+            for (int x = xLeft; x<=xRight; x++)
+            {
+                Point p = new Point(x, y, sym);
+                pList.Add(p);
+
+            }
+           
 
         }
 

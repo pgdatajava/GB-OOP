@@ -19,7 +19,7 @@ namespace Snake
             p2.Draw();
 
             //create HorizontalLine object
-            HorizontalLine line = new HorizontalLine();
+            HorizontalLine line = new HorizontalLine(5, 10, 8, '*');
             line.Draw();
 
             Console.ReadKey();
